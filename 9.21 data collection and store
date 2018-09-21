@@ -1,0 +1,10 @@
+trash in, trash out.
+spider, platform API.  tushare, yahoo finance, google finance, quantquote, EODData
+csv, NoSQL(news and reviews on news),SQL 
+
+data format:
+exchange, data source, ticker/symbol, price, stock splits/dividend adjustment, national holiday
+be careful:!!  stock splits, spikes(spike fliter), missing data
+
+design EOD table
+exchange, DataVendor, Symbol, DailyPrice
