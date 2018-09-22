@@ -10,3 +10,22 @@ yahoo_url = "http://ichart.finance.yahoo.com/table.csv"  #this API broke
 yahoo_url += "?s=%s&a=%s&b=%s&c=%s&d=%s&e=%s&f=%s"  
 yahoo_url = yahoo_url % ticker_tup
 !point is the yahoo_url % ticker_tup, use the operation % to replace %s with element in ticker_tup
+
+
+after identify the connection with database, take the execution to mysql database:
+con = mdb.connect(db_host, db_user, db_pass, db_name)
+ with con: 
+        cur = con.cursor()
+        cur.execute("SELECT id, ticker FROM symbol")  #sql execute
+        data = cur.fetchall()
+        return [(d[0], d[1]) for d in data]
+# This code function is to execute sql to select id, ticker column from table 'symbol'
+# data = cur.fetchall() get the value, the type of data is tuple, like ((1,'MMM'),(2,'nnn'),(),(),(id,'ticker')...)
+
+#next use pandas_datareader.data to gain price data from yahoo, codes are below:
+import pandas_datareader.data as web
+every_stock_dataframe = web.DataReader( "MMM", "yahoo",    #ticker, source, start_time, end_time
+              datetime.datetime(2015,7,6),
+              datetime.datetime(2018,7,1))
+              
+#There is a problem: time become index, but I want time to be a column.
