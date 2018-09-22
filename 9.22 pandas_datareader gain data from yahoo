@@ -1,0 +1,12 @@
+yahoo API is broken, so I must use pandas
+
+This is original operation: 
+ ticker_tup = (
+        ticker, start_date[1]-1, start_date[2], 
+        start_date[0], end_date[1]-1, end_date[2], 
+        end_date[0]
+    )
+yahoo_url = "http://ichart.finance.yahoo.com/table.csv"  #this API broke
+yahoo_url += "?s=%s&a=%s&b=%s&c=%s&d=%s&e=%s&f=%s"  
+yahoo_url = yahoo_url % ticker_tup
+!point is the yahoo_url % ticker_tup, use the operation % to replace %s with element in ticker_tup
