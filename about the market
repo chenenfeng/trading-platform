@@ -1,0 +1,32 @@
+future markets: 
+more reliable entry/exit signals
+leverage
+
+invest on various instruments/sectors/issues don't mean your portfolio is relatively diversified
+how about they all follow a same trend
+
+trades intraday, using mostly ‘minute’ charts in smaller increments.
+
+1.availability of high quality data with sufficient history to detect the patterns in the first place
+2.liquidity of the underlying market
+
+Futures, Forex, ETF are high liquid market, suitable for backtest
+since your trade won't make much effect on the market
+
+individual: stock, Forex
+institution: future, forex
+
+liquidity, precision, density of dataset, number of participants
+
+### Forex market:
+
+1. transparency increased
+2. algorithm trading
+
+trading currency pairs, 24/5
+
+### algorithm trading
+statistical
+auto-hedging
+algorithmic execute strategies
+direct market access
