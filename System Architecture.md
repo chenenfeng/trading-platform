@@ -1,5 +1,6 @@
-## https://blog.quantinsti.com/algorithmic-trading-system/
-## HELPFUL: https://blog.quantinsti.com/trading-systems-architecture/
+## Overview: https://blog.quantinsti.com/algorithmic-trading-system/
+## Helpful: https://blog.quantinsti.com/trading-systems-architecture/
+## Order Management Architecture: https://blog.quantinsti.com/automated-trading-order-management-system/
 ## System Architecture Components
 - Market Adapter  -> Data Feed
 - Complex Event Processing Engine  -> Strategy
@@ -29,3 +30,8 @@ automated trade need more fast processing speed, like milliseconds and microseco
 
 ## Standard Protocal: Financial Information Exchange(FIX）Protocal
 so new data vendor show up
+
+## What I should design and code
+- Market Data Receiver and Database to store
+- CEP engine（Quantopian)  Important and Difficult, also need UI
+- Order Management( Including RMS）
