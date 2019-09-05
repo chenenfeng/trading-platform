@@ -24,3 +24,4 @@ else:
 failed to push some refs to 'git@github.com:chenenfeng/trading-platform.git':
 reason: no Readme file in local project
 solution:  git pull --rebase origin master
+
