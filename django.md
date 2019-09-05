@@ -21,3 +21,6 @@ navbar: bootstrap.com   documentation
 else:
         return render(request, 'home.html', {'ticker': "Enter a Ticker Symbol Above"})
     
+failed to push some refs to 'git@github.com:chenenfeng/trading-platform.git':
+reason: no Readme file in local project
+solution:  git pull --rebase origin master
