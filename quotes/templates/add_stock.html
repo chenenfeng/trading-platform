@@ -17,6 +17,7 @@
           <tr>
             <th scope="col">Company Name</th>
             <th scope="col">Stock Price</th>
+          
             <th scope="col">Previous Close</th>
             <th scope="col">Market Cap</th>
             <th scope="col">YTD Change</th>
@@ -57,5 +58,5 @@
 {% for item in ticker %}
         <a href="{% url 'delete' item.id %}" class="btn btn-primary">Delete {{ item }}</a> <br/><br/>
     {% endfor %}
-    
+
 {% endblock %}
