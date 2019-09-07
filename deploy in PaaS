@@ -1,0 +1,21 @@
+Reference: https://www.youtube.com/watch?v=6DI_7Zja8Zc
+
+run bash, change directory to your project
+pip freeze
+create new file: requirements.txt
+then copy the dependencies into your requirements.txt
+
+git init
+git add -A
+git commit -m "sd"
+
+heroku create myapp
+git push heroku master
+ALLOWED_HOSTS = ['stockplat.herokuapp.com']
+
+setting.py:
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+allow
+Procfile :
+web: gunicorn stocks.wsgi
+
