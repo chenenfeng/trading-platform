@@ -42,3 +42,6 @@ types of orders:
 market order -- jump in at current market price    slippage
 buy stop or sell stop -- enter the market going with the trend
 buy limit or sell limit -- looking for reversal
+
+Fibonacci trend ratio.
+look at every trend.
